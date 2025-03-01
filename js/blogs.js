@@ -1,3 +1,3 @@
 document.getElementById('qus-btn').addEventListener('click', function(){
-    window.location.href = "./qusestion.html";
+    window.location.href = "./question.html";
 })
