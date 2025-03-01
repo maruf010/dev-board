@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- CDN DaisyUI & Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<style>
+    .poppins-font {
+        font-family: "Poppins", sans-serif;
+    }
+
+    .primary-btn {
+        background-color: #3752FD;
+        color: white;
+        padding: 7px 14px;
+        border-radius: 8px;
+        font-size: small;
+
+    }
+</style>
+
+<body class="bg-[#F4F7FF] poppins-font">
+    <header>
+        <!-- nav -->
+        <nav class="max-w-7xl mx-auto py-5 ">
+            <div class="navbar bg-base-100 rounded-2xl">
+                <div class="flex-1">
+                    <img class="w-8 ml-3" src="./assets/logo.png" alt="">
+                    <h1 class="text-3xl font-light ml-2">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div>
+                    <button id="back-desk" class="primary-btn">Back to Desk</button>
+                </div>
+            </div>
+        </nav>
+        <!-- blogs -->
+        <h1 class="max-w-7xl  mx-auto text-center font-bold text-2xl">Blogs</h1>
+        <div class="max-w-7xl mx-auto py-7 space-y-4">
+            <div class="bg-white p-5 rounded-2xl">
+                <h1 class="card-title text-xl font-medium my-4 card-title">Question-1: What are the different ways to
+                    select an element in the DOM?</h1>
+                <div class="border border-dashed"></div>
+                <p class="bg-white rounded-xl px-2 py-3 text-gray-500 text-sm mt-5">A card component has a
+                    figure, a body part
+                    and inside body their are title and actions parts.
+                </p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl">
+                <h1 class="card-title text-xl font-medium my-4 card-title">Question-2: What is the difference between
+                    innerHTML, innerText, and textContent ?</h1>
+                <div class="border border-dashed"></div>
+                <p class="bg-white rounded-xl px-2 py-3 text-gray-500 text-sm mt-5">A card component has a
+                    figure, a body part
+                    and inside body their are title and actions parts.
+                </p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl">
+                <h1 class="card-title text-xl font-medium my-4 card-title">Question-3: What is event delegation in the
+                    DOM?</h1>
+                <div class="border border-dashed"></div>
+                <p class="bg-white rounded-xl px-2 py-3 text-gray-500 text-sm mt-5">A card component has a
+                    figure, a body part
+                    and inside body their are title and actions parts.
+                </p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl">
+                <h1 class="card-title text-xl font-medium my-4 card-title">Question-4: What is event bubbling in the
+                    DOM?</h1>
+                <div class="border border-dashed"></div>
+                <p class="bg-white rounded-xl px-2 py-3 text-gray-500 text-sm mt-5">A card component has a
+                    figure, a body part
+                    and inside body their are title and actions parts.
+                </p>
+            </div>
+            <div class="bg-white p-5 rounded-2xl">
+                <h1 class="card-title text-xl font-medium my-4 card-title">Question-5: How do you create, add, and
+                    remove elements using JavaScript? </h1>
+                <div class="border border-dashed"></div>
+                <p class="bg-white rounded-xl px-2 py-3 text-gray-500 text-sm mt-5">A card component has a
+                    figure, a body part
+                    and inside body their are title and actions parts.
+                </p>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.getElementById('back-desk').addEventListener('click', function () {
+            window.history.back();
+        })
+    </script>
+    <script src="./js/blogs.js"></script>
+</body>
+
+</html>
