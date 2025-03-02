@@ -17,7 +17,7 @@ for (let i = 0; i < allBtn.length; i++) {
 
         // card title
         const cardTitle = comments[i].innerText;
-        console.log(cardTitle)
+        // console.log(cardTitle)
 
         // live time
         let currentTime = new Date().toLocaleTimeString();
